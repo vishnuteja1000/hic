@@ -1,5 +1,15 @@
+
+{% extends 'baseapp.html'%}
 <!doctype html>
 <html lang="en">
+
+    <title>
+        {% block conte %}
+            <h3>Hospitals k</h3>
+        {% endblock %}
+    </title>
+
+  
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,25 +18,41 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <div class="view-source">
-    {% block content %}
-    <title>Hello, world!</title>
-    {% endblock %}
-  </div>
+
   </head>
   <body>
     
- </nav>
-    <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Hospitals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Patients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Insurance Claims</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Staff</a>
+          </li>
+    </nav>
+    <body>
         {% block content %}
-          <h1> Welcome to</h1>
-        {% endblock %}
-    </div>
+            <h3>Hospitals Page</h3>
+        {% endblock content %}
+    </body>
 
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    &copy 2021 Copyright : 
-    <a class="text-dark">H I C</a>
+    © 2020 Copyright:
+    <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
   </div>
   <!-- Copyright -->
 </footer>
@@ -40,3 +66,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html> 
+
